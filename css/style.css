@@ -1863,10 +1863,6 @@ body {
     min-width: 7.125rem;
   }
 
-  .menu__link {
-    font-size: 1rem;
-  }
-
   .footer {
     padding-top: 5.5rem;
   }
@@ -1969,6 +1965,10 @@ body {
 
   .header._header-scroll {
     padding-bottom: 1.03125rem;
+  }
+
+  .menu__link {
+    font-size: 1rem;
   }
 
   .main-section__image {
@@ -2115,10 +2115,6 @@ body {
 
   .header__logo {
     min-width: 3.75rem;
-  }
-
-  .menu__link {
-    font-size: 0.5rem;
   }
 
   .footer {
@@ -2310,6 +2306,10 @@ body {
 
   .menu__item:not(:last-child) {
     margin-bottom: 1.25rem;
+  }
+
+  .menu__link {
+    font-size: 0.875rem;
   }
 
   .menu__link {
@@ -2830,18 +2830,6 @@ body {
     }
 }
 
-@supports (font-size: clamp( 0.5rem , 0.3241758242rem  +  0.8791208791vw , 1rem )) {
-    .menu__link {
-      font-size: clamp( 0.5rem , 0.3241758242rem  +  0.8791208791vw , 1rem );
-    }
-}
-
-@supports not (font-size: clamp( 0.5rem , 0.3241758242rem  +  0.8791208791vw , 1rem )) {
-    .menu__link {
-      font-size: calc(0.5rem + 0.5 * (100vw - 20rem) / 56.875);
-    }
-}
-
 @supports (padding-top: clamp( 1.875rem , 0.6002747253rem  +  6.3736263736vw , 5.5rem )) {
     .footer {
       padding-top: clamp( 1.875rem , 0.6002747253rem  +  6.3736263736vw , 5.5rem );
@@ -3145,6 +3133,18 @@ body {
 @supports not (padding-bottom: clamp( 0.5rem , -0.4443761284rem  +  1.9675015046vw , 1.03125rem )) {
     .header._header-scroll {
       padding-bottom: calc(0.5rem + 0.53125 * (100vw - 47.99875rem) / 27.00125);
+    }
+}
+
+@supports (font-size: clamp( 0.875rem , 0.6527938521rem  +  0.4629415305vw , 1rem )) {
+    .menu__link {
+      font-size: clamp( 0.875rem , 0.6527938521rem  +  0.4629415305vw , 1rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.875rem , 0.6527938521rem  +  0.4629415305vw , 1rem )) {
+    .menu__link {
+      font-size: calc(0.875rem + 0.125 * (100vw - 47.99875rem) / 27.00125);
     }
 }
 
